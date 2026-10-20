@@ -1,0 +1,401 @@
+WARNING: File `gltest.config.yaml` not found in the current directory, using default config, create a `gltest.config.yaml` file to manage multiple networks
+INFO: Clearing artifacts directory: artifacts
+INFO: Using the following configuration:
+INFO:   RPC URL: http://127.0.0.1:4000/api
+INFO:   Selected Network: localnet
+INFO:   Available networks: ['localnet', 'studionet', 'testnet_asimov', 'testnet_bradbury']
+INFO:   Selected chain type: localnet
+INFO:   Available chains: localnet, studionet, testnet_asimov, testnet_bradbury
+INFO:   Contracts directory: contracts
+INFO:   Artifacts directory: artifacts
+INFO:   Environment: .env
+INFO:   Default wait interval: 3000 ms
+INFO:   Default wait retries: 50
+INFO:   Leader only mode: False
+FFFFFFFFFFFFF                                                            [100%]
+================================== FAILURES ===================================
+____________ test_real_po_translation_semantics_and_sealed_receipt ____________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x00000208E57CDDA0>
+
+    def test_real_po_translation_semantics_and_sealed_receipt(direct_vm,direct_deploy):
+>       c=deploy(direct_vm,direct_deploy);assessed(direct_vm,c)
+                                          ^^^^^^^^^^^^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py:31: in assessed
+    register(vm,c);c.assess_clause('python','exit')
+    ^^^^^^^^^^^^^^
+contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py:28: in register
+    c.register('python',json.dumps(s or spec(),ensure_ascii=False));serve(vm);model(vm)
+    ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_glossary_bound_translation.GlossaryBoundTranslation object at 0x00000208E58AED20>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'GlossaryBoundTranslation' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+______________ test_validator_rederives_semantics_and_grounding _______________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x00000208E592B9C0>
+
+    def test_validator_rederives_semantics_and_grounding(direct_vm,direct_deploy):
+>       c=deploy(direct_vm,direct_deploy);assessed(direct_vm,c)
+                                          ^^^^^^^^^^^^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py:44: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py:31: in assessed
+    register(vm,c);c.assess_clause('python','exit')
+    ^^^^^^^^^^^^^^
+contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py:28: in register
+    c.register('python',json.dumps(s or spec(),ensure_ascii=False));serve(vm);model(vm)
+    ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_glossary_bound_translation.GlossaryBoundTranslation object at 0x00000208E59A94F0>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'GlossaryBoundTranslation' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+____________________ test_validator_refetches_actual_bytes ____________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x00000208E59C14E0>
+
+    def test_validator_refetches_actual_bytes(direct_vm,direct_deploy):
+>       c=deploy(direct_vm,direct_deploy);assessed(direct_vm,c)
+                                          ^^^^^^^^^^^^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py:31: in assessed
+    register(vm,c);c.assess_clause('python','exit')
+    ^^^^^^^^^^^^^^
+contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py:28: in register
+    c.register('python',json.dumps(s or spec(),ensure_ascii=False));serve(vm);model(vm)
+    ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_glossary_bound_translation.GlossaryBoundTranslation object at 0x00000208E5A0F740>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'GlossaryBoundTranslation' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+_________________ test_msgid_english_cannot_be_used_as_target _________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x00000208E5A2F240>
+
+    def test_msgid_english_cannot_be_used_as_target(direct_vm,direct_deploy):
+        c=deploy(direct_vm,direct_deploy);s=spec(SOURCE)
+        s['clauses'][0]['glossary']=[]
+>       register(direct_vm,c,s)
+
+contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py:28: in register
+    c.register('python',json.dumps(s or spec(),ensure_ascii=False));serve(vm);model(vm)
+    ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_glossary_bound_translation.GlossaryBoundTranslation object at 0x00000208E5B04740>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'GlossaryBoundTranslation' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+_____________ test_nonmatch_is_terminal_and_never_seals[MISMATCH] _____________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x00000208E5B58AE0>
+decision = 'MISMATCH'
+
+    @pytest.mark.parametrize('decision',['MISMATCH','UNCERTAIN'])
+    def test_nonmatch_is_terminal_and_never_seals(direct_vm,direct_deploy,decision):
+>       c=deploy(direct_vm,direct_deploy);register(direct_vm,c)
+                                          ^^^^^^^^^^^^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py:66: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py:28: in register
+    c.register('python',json.dumps(s or spec(),ensure_ascii=False));serve(vm);model(vm)
+    ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_glossary_bound_translation.GlossaryBoundTranslation object at 0x00000208E5AD08C0>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'GlossaryBoundTranslation' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+____________ test_nonmatch_is_terminal_and_never_seals[UNCERTAIN] _____________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x00000208E5C1A020>
+decision = 'UNCERTAIN'
+
+    @pytest.mark.parametrize('decision',['MISMATCH','UNCERTAIN'])
+    def test_nonmatch_is_terminal_and_never_seals(direct_vm,direct_deploy,decision):
+>       c=deploy(direct_vm,direct_deploy);register(direct_vm,c)
+                                          ^^^^^^^^^^^^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py:66: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py:28: in register
+    c.register('python',json.dumps(s or spec(),ensure_ascii=False));serve(vm);model(vm)
+    ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_glossary_bound_translation.GlossaryBoundTranslation object at 0x00000208E5C3A3C0>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'GlossaryBoundTranslation' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+________ test_deterministic_invariants_override_match[Control-X-TOKEN] ________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x00000208E5C7FD80>
+replacement = 'Control-X', reason = 'TOKEN'
+
+    @pytest.mark.parametrize('replacement,reason',[('Control-X','TOKEN'),('nonzero','NUMBER'),('����','GLOSSARY')])
+    def test_deterministic_invariants_override_match(direct_vm,direct_deploy,replacement,reason):
+        c=deploy(direct_vm,direct_deploy)
+        old={'TOKEN':'Control-Z','NUMBER':'0','GLOSSARY':'������'}[reason]
+        # Deliberately synthetic adversarial mutation, not a claimed upstream translation.
+        target=TARGET.replace(old,replacement)
+        raw=BODIES[1].replace(old,replacement)
+        s=spec(target);s['target']['sha256']=hashlib.sha256(raw.encode()).hexdigest()
+>       c.register('python',json.dumps(s,ensure_ascii=False));serve(direct_vm,target=raw);model(direct_vm)
+        ^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py:82: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_glossary_bound_translation.GlossaryBoundTranslation object at 0x00000208E5D4B260>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'GlossaryBoundTranslation' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+________ test_deterministic_invariants_override_match[nonzero-NUMBER] _________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x00000208E5CE54E0>
+replacement = 'nonzero', reason = 'NUMBER'
+
+    @pytest.mark.parametrize('replacement,reason',[('Control-X','TOKEN'),('nonzero','NUMBER'),('����','GLOSSARY')])
+    def test_deterministic_invariants_override_match(direct_vm,direct_deploy,replacement,reason):
+        c=deploy(direct_vm,direct_deploy)
+        old={'TOKEN':'Control-Z','NUMBER':'0','GLOSSARY':'������'}[reason]
+        # Deliberately synthetic adversarial mutation, not a claimed upstream translation.
+        target=TARGET.replace(old,replacement)
+        raw=BODIES[1].replace(old,replacement)
+        s=spec(target);s['target']['sha256']=hashlib.sha256(raw.encode()).hexdigest()
+>       c.register('python',json.dumps(s,ensure_ascii=False));serve(direct_vm,target=raw);model(direct_vm)
+        ^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py:82: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_glossary_bound_translation.GlossaryBoundTranslation object at 0x00000208E5D238F0>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'GlossaryBoundTranslation' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+_____ test_deterministic_invariants_override_match[\u5f15\u64ce-GLOSSARY] _____
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x00000208E5D24A40>
+replacement = '����', reason = 'GLOSSARY'
+
+    @pytest.mark.parametrize('replacement,reason',[('Control-X','TOKEN'),('nonzero','NUMBER'),('����','GLOSSARY')])
+    def test_deterministic_invariants_override_match(direct_vm,direct_deploy,replacement,reason):
+        c=deploy(direct_vm,direct_deploy)
+        old={'TOKEN':'Control-Z','NUMBER':'0','GLOSSARY':'������'}[reason]
+        # Deliberately synthetic adversarial mutation, not a claimed upstream translation.
+        target=TARGET.replace(old,replacement)
+        raw=BODIES[1].replace(old,replacement)
+        s=spec(target);s['target']['sha256']=hashlib.sha256(raw.encode()).hexdigest()
+>       c.register('python',json.dumps(s,ensure_ascii=False));serve(direct_vm,target=raw);model(direct_vm)
+        ^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py:82: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_glossary_bound_translation.GlossaryBoundTranslation object at 0x00000208E5DF9970>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'GlossaryBoundTranslation' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+___________ test_seal_refetches_and_does_not_trust_stale_assessment ___________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x00000208E5E68B80>
+
+    def test_seal_refetches_and_does_not_trust_stale_assessment(direct_vm,direct_deploy):
+>       c=deploy(direct_vm,direct_deploy);assessed(direct_vm,c)
+                                          ^^^^^^^^^^^^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py:90: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py:31: in assessed
+    register(vm,c);c.assess_clause('python','exit')
+    ^^^^^^^^^^^^^^
+contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py:28: in register
+    c.register('python',json.dumps(s or spec(),ensure_ascii=False));serve(vm);model(vm)
+    ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_glossary_bound_translation.GlossaryBoundTranslation object at 0x00000208E5DBAEA0>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'GlossaryBoundTranslation' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+__________ test_owner_withdrawal_revokes_receipt_and_preserves_scope __________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x00000208E5E92660>
+
+    def test_owner_withdrawal_revokes_receipt_and_preserves_scope(direct_vm,direct_deploy):
+>       c=deploy(direct_vm,direct_deploy);assessed(direct_vm,c);c.seal('python')
+                                          ^^^^^^^^^^^^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py:96: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py:31: in assessed
+    register(vm,c);c.assess_clause('python','exit')
+    ^^^^^^^^^^^^^^
+contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py:28: in register
+    c.register('python',json.dumps(s or spec(),ensure_ascii=False));serve(vm);model(vm)
+    ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_glossary_bound_translation.GlossaryBoundTranslation object at 0x00000208E5F4BE60>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'GlossaryBoundTranslation' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+______________ test_empty_fuzzy_and_plural_targets_are_excluded _______________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x00000208E5EB4180>
+
+    def test_empty_fuzzy_and_plural_targets_are_excluded(direct_vm,direct_deploy):
+        for modifier in ['#, fuzzy\n','plural']:
+            c=deploy(direct_vm,direct_deploy)
+            raw=('#, fuzzy\nmsgid '+json.dumps(SOURCE)+'\nmsgstr '+json.dumps(TARGET,ensure_ascii=False)+'\n') if modifier!='plural' else ('msgid "item"\nmsgid_plural "items"\nmsgstr[0] '+json.dumps(TARGET,ensure_ascii=False)+'\n')
+            s=spec();s['target']['sha256']=hashlib.sha256(raw.encode()).hexdigest()
+>           c.register('python',json.dumps(s,ensure_ascii=False));serve(direct_vm,target=raw);model(direct_vm)
+            ^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py:112: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_glossary_bound_translation.GlossaryBoundTranslation object at 0x00000208E5D39B80>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'GlossaryBoundTranslation' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+______________________ test_exact_scope_and_state_guards ______________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x00000208E5FF18A0>
+
+    def test_exact_scope_and_state_guards(direct_vm,direct_deploy):
+>       c=deploy(direct_vm,direct_deploy);register(direct_vm,c)
+                                          ^^^^^^^^^^^^^^^^^^^^^
+
+contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py:116: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py:28: in register
+    c.register('python',json.dumps(s or spec(),ensure_ascii=False));serve(vm);model(vm)
+    ^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <CalldataProxy for <_contract_glossary_bound_translation.GlossaryBoundTranslation object at 0x00000208E5FADAF0>>
+name = 'register'
+
+    def _proxy_getattr(self: Any, name: str) -> Any:
+        inst = object.__getattribute__(self, '_instance')
+>       attr = getattr(inst, name)
+               ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'GlossaryBoundTranslation' object has no attribute 'register'
+
+contributions\genlayer-2026-10-21\tooling\.venv\Lib\site-packages\gltest\direct\loader.py:427: AttributeError
+=========================== short test summary info ===========================
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py::test_real_po_translation_semantics_and_sealed_receipt
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py::test_validator_rederives_semantics_and_grounding
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py::test_validator_refetches_actual_bytes
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py::test_msgid_english_cannot_be_used_as_target
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py::test_nonmatch_is_terminal_and_never_seals[MISMATCH]
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py::test_nonmatch_is_terminal_and_never_seals[UNCERTAIN]
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py::test_deterministic_invariants_override_match[Control-X-TOKEN]
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py::test_deterministic_invariants_override_match[nonzero-NUMBER]
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py::test_deterministic_invariants_override_match[\u5f15\u64ce-GLOSSARY]
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py::test_seal_refetches_and_does_not_trust_stale_assessment
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py::test_owner_withdrawal_revokes_receipt_and_preserves_scope
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py::test_empty_fuzzy_and_plural_targets_are_excluded
+FAILED contributions\genlayer-2026-10-21\profile04\contracts\glossary-bound-translation\tests\test_translation.py::test_exact_scope_and_state_guards
+13 failed in 1.72s

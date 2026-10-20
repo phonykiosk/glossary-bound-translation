@@ -1,0 +1,49 @@
+{
+  "source": "glossary_bound_translation.py",
+  "source_sha256": "aba6166f764bf6fe6eeadaf23b025ebb17d62c076128de903b0eceb60cba0e7c",
+  "genvm_release": "v0.2.12",
+  "runner": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+  "stdlib": "py-lib-genlayer-std:11rhn002yfajawsz7fai6mykznbxkxs6l91iskj5cm82c92qhy3v",
+  "packages": {
+    "genlayer-test": "0.29.2",
+    "genvm-linter": "0.11.0",
+    "cloudpickle": "3.1.2",
+    "pytest": "9.1.1"
+  },
+  "checks": {
+    "tests": {
+      "exit_code": 0,
+      "passed": true
+    },
+    "lint": {
+      "exit_code": 0,
+      "passed": true
+    },
+    "schema": {
+      "exit_code": 0,
+      "passed": true
+    }
+  },
+  "live_consensus_tested": false,
+  "deployment": {
+    "at": "2026-10-20T23:00:50.264Z",
+    "title": "GlossaryBoundTranslation",
+    "kind": "independent_intelligent_contract",
+    "profileSeq": 4,
+    "contractAddress": "0xF5C3337CcE38332b6Ff73471DE0a22087bC697ac",
+    "transactionHash": "0x109a6536f06634bdf7a2a7bbe15812e268d725e71e1edfa1c85c96abffdb329e",
+    "sourceSha256": "aba6166f764bf6fe6eeadaf23b025ebb17d62c076128de903b0eceb60cba0e7c",
+    "network": "GenLayer Studio",
+    "chainId": 61999,
+    "constructorArgs": [],
+    "state": "FINALIZED",
+    "executionResult": "SUCCESS",
+    "executionMode": "NORMAL",
+    "leaderOnly": false,
+    "consensusResult": "MAJORITY_AGREE",
+    "value": 0,
+    "liveScope": "Constructor only; full live register/assess/seal/withdraw translation flow not exercised.",
+    "publicSourceBytesVerified": false,
+    "onchainSourceSha256": "aba6166f764bf6fe6eeadaf23b025ebb17d62c076128de903b0eceb60cba0e7c"
+  }
+}

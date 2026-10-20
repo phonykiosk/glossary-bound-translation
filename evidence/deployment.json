@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-20T23:00:50.264Z",
+  "title": "GlossaryBoundTranslation",
+  "kind": "independent_intelligent_contract",
+  "profileSeq": 4,
+  "contractAddress": "0xF5C3337CcE38332b6Ff73471DE0a22087bC697ac",
+  "transactionHash": "0x109a6536f06634bdf7a2a7bbe15812e268d725e71e1edfa1c85c96abffdb329e",
+  "sourceSha256": "aba6166f764bf6fe6eeadaf23b025ebb17d62c076128de903b0eceb60cba0e7c",
+  "network": "GenLayer Studio",
+  "chainId": 61999,
+  "constructorArgs": [],
+  "state": "FINALIZED",
+  "executionResult": "SUCCESS",
+  "executionMode": "NORMAL",
+  "leaderOnly": false,
+  "consensusResult": "MAJORITY_AGREE",
+  "value": 0,
+  "liveScope": "Constructor only; full live register/assess/seal/withdraw translation flow not exercised.",
+  "publicSourceBytesVerified": false,
+  "onchainSourceSha256": "aba6166f764bf6fe6eeadaf23b025ebb17d62c076128de903b0eceb60cba0e7c"
+}

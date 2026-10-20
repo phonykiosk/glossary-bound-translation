@@ -1,0 +1,49 @@
+{
+  "finding": "literal dot repository segment accepted by commit locator grammar",
+  "status": "locally_fixed_verified_independent_review_closed",
+  "fixer": "/root/genlayer_projects_pair02",
+  "old_source_sha256": "b4f9b496eae67707cbb9006a40cdc70152005b585c5f2983880dc8d0584a430e",
+  "old_source_status": "superseded_local_candidate_do_not_deploy",
+  "new_source_sha256": "aba6166f764bf6fe6eeadaf23b025ebb17d62c076128de903b0eceb60cba0e7c",
+  "scope": "Commit locator namespace/commit provenance only. Exact expected SHA256 byte binding remained enforced before and after the repair.",
+  "production_change": "Validate every slash-delimited owner/repository/commit/path segment against empty/dot/dotdot after the existing anchored grammar; keep valid dotted/underscored repository names.",
+  "red": {
+    "command": "python -m pytest -q tests/test_locator_namespace.py",
+    "cwd": ".",
+    "log": "namespace-red.log",
+    "exit_code": 1,
+    "failed": 4,
+    "passed": 3,
+    "failure": "Expected revert with message: commit-pinned, but call succeeded"
+  },
+  "green": {
+    "command": "python tools/verify.py",
+    "cwd": ".",
+    "log": "namespace-full-verification.log",
+    "sdk_tests_passed": 22,
+    "tests_exit_code": 0,
+    "full_semantic_exit_code": 0,
+    "schema_exit_code": 0,
+    "schema_bytes_unchanged": true,
+    "schema_sha256": "07ad076f32c83a7626d3157e506b9d382cacf7425de54b595212b1ca2fb6ee8e",
+    "genvm_release": "v0.2.12"
+  },
+  "controls": [
+    ".github",
+    "repo.name",
+    "_repo"
+  ],
+  "limitations": [
+    "No live malicious repository or HTTP transport normalization tested; accepted bad input was reproduced through the actual SDK public API.",
+    "Source hashes verify declared bytes, not publisher identity, code safety, DNS ownership, transport configuration or mutable ref existence.",
+    "Local candidate only; no deployment, publication, live wallet flow or consensus claimed."
+  ],
+  "deployment": null,
+  "publication": null,
+  "independent_final_review": {
+    "reviewer": "/root",
+    "evidence": "namespace-final-review.json",
+    "result": "closed_after_fix",
+    "scope": "Narrow correction review; not a new full audit, repeated suite, live exploit or deployment."
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "file": "interpreter-en.rst",
+    "url": "https://raw.githubusercontent.com/python/cpython/46a54e5e6978d07f3396b48bf2bcbd1bf193e44f/Doc/tutorial/interpreter.rst",
+    "sha256": "4b9521b8273f55f584680427ce13d28aac35ae19a3aa37e41fc7806d85361ec9",
+    "bytes": 6482,
+    "retrieved_on": "2026-10-21",
+    "scope": "Python 3.14 interpreter tutorial",
+    "test_transport": "mocked real snapshot"
+  },
+  {
+    "file": "interpreter-zh.po",
+    "url": "https://raw.githubusercontent.com/python/python-docs-zh-cn/9a92529a807deeab37c0fd4db5b68a33ea227e36/tutorial/interpreter.po",
+    "sha256": "6d3fdb5d5d38011dd3748fefc9c4f546a3e907b2ebc40ffd3e05d35bd68a61be",
+    "bytes": 14237,
+    "retrieved_on": "2026-10-21",
+    "scope": "Python 3.14 interpreter tutorial",
+    "test_transport": "mocked real snapshot"
+  }
+]
